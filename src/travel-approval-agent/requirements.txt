@@ -1,0 +1,8 @@
+azure-ai-agentserver-responses==1.0.0b7
+azure-ai-projects==2.0.1
+azure-identity>=1.25.0
+agent-framework>=1.7.0
+agent-framework-azure-ai>=1.0.0rc6
+agent-framework-foundry-hosting
+azure-ai-agentserver-optimization
+pydantic

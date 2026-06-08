@@ -1,0 +1,38 @@
+[
+  {
+    "id": "policy_compliance_decision",
+    "description": "The final decision is correct given the travel policy limits for the request, such as class, fare, lodging rate, destination, dates, and other stated policy constraints.",
+    "weight": 10
+  },
+  {
+    "id": "budget_constraint_handling",
+    "description": "The response checks department budget availability or projected spend and does not approve requests that exceed the available budget.",
+    "weight": 6
+  },
+  {
+    "id": "missing_or_conflicting_information_strictness",
+    "description": "The agent does not infer approval when required trip details are missing or when policy and budget information conflict; it responds conservatively by rejecting or escalating instead of approving.",
+    "weight": 5
+  },
+  {
+    "id": "cheaper_alternative_relevance",
+    "description": "When a request is expensive, borderline, or not approved, the response suggests a feasible cheaper alternative tied to the specific cost driver.",
+    "weight": 4
+  },
+  {
+    "id": "decision_traceability",
+    "description": "The response clearly states the rule, limit, or budget issue that drives the decision.",
+    "weight": 4
+  },
+  {
+    "id": "workflow_discipline",
+    "description": "The assistant does not present a final approval, rejection, or escalation before completing the policy and budget checks.",
+    "weight": 3
+  },
+  {
+    "id": "general_quality",
+    "description": "Other important quality factors not covered by listed criteria.",
+    "weight": 5,
+    "always_applicable": true
+  }
+]
