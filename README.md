@@ -472,11 +472,9 @@ Results:
 8. **`apply` writes only the winner locally.** Other candidates are service-only — you can't inspect them by looking at `.agent_configs/`.
 9. **Score vs. pass-rate can diverge.** Score = rubric-weighted, pass = task-level binary. When they disagree, dive into per-dimension breakdown.
 
-### "Model-only" optimization
+### "Model" optimization
 
-10. Pure model-only optimization is awkward because removing `instructions.md` from baseline turns instruction tuning off **but also** leaves `config.compose_instructions()` empty at runtime — every candidate then evaluates with no system prompt. Workarounds:
-    - Hard-code a `FALLBACK_INSTRUCTIONS` string in `main.py` (`config.instructions or FALLBACK`), or
-    - Accept combined instruction + model optimization and read model-level effects from the portal chart.
+10. Now re-writing the topic
 
 ### Rubric dimensions
 
